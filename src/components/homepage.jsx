@@ -136,10 +136,10 @@ export function Homepage() {
       const response = await axios.put(`https://guvi-final-node-2.onrender.com/updateuser/${taskid}`, editedtaskdetails);
       if (response) {
         console.log("Task updated successfully");
-        console.log(response.data); // Assuming the response contains the updated task object
+        console.log(response.data); //
   console.log(response.data.user);
-        // Dispatch an action to update Redux state with the updated task
-        dispatch(storeediteddata(response.data.user)); // Assuming storeTasksSuccess action creator is defined
+        // Dispatch  action to update Redux state with the updated task
+        dispatch(storeediteddata(response.data.user)); // 
       }
     } catch (error) {
       console.error("Error updating task:", error);
