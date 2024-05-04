@@ -119,7 +119,7 @@ console.log(userCredentials.phonenumber);
       }).catch((error)=>{
 
         console.error("Error creating user:", error.response.data);
-        // You can also check for specific error status codes and handle them differently if needed
+        //  check for specific error
         if (error.response.status === 400) {
 
           console.error("Bad request - Invalid data:", error.response.data);
@@ -210,7 +210,7 @@ console.log(response.status);
     }).catch((error)=>{
 
       console.error("Error creating user:", error);
-      // You can also check for specific error status codes and handle them differently if needed
+      // check for specific error 
       if (error.response.status === 400) {
 setloginfailed(true);
       }
