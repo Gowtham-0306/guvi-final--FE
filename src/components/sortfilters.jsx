@@ -12,7 +12,7 @@ export function Sorting({ setfiltername = () => {} }) {
   const [status, setStatus] = React.useState('');
   const dispatch = useDispatch(); // Initialize useDispatch hook
 
-  // Get the selected status from Redux state
+  // 
   const selectedStatus = useSelector((state) => state.Taskdetails.selectedStatus);
   const newtaskarray = useSelector((state) => state.Taskdetails.data);
 
@@ -20,7 +20,7 @@ export function Sorting({ setfiltername = () => {} }) {
     setStatus(taskstatus);
    console.log(taskstatus);
 
-    // Dispatch an action to update Redux state with selected status
+    // Dispatch an action 
     dispatch(updateSelectedStatus(taskstatus));
   };
 
