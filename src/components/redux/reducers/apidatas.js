@@ -8,7 +8,7 @@ export  async function fetchDataFromAPI (dispatch = ()=>{} ) {
   
 
 
-    const apiurl = "http://127.0.0.1:3000/gettaskdetails";
+    const apiurl = "https://guvi-final-node-2.onrender.com/gettaskdetails";
 
 
 
